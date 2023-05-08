@@ -29,7 +29,7 @@ const typeElement = document.getElementById('type1');
 
 
 let getPokemon = () => {
-    const inputName = document.getElementById('input__pkm').value
+    const inputName = document.getElementById('input__pkm').value.toLowerCase()
     if (!inputName.length < 1) {
         const url = `https://pokeapi.co/api/v2/pokemon/${inputName}`;
         fetch(url)
