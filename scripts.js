@@ -16,7 +16,6 @@ const typeColor = {
     rock: "#2d3436",
     water: "#0190FF",
 }
-
 const button = document.getElementById('btn');
 const card = document.querySelector('.card');
 const hpElement = document.getElementById('hp');
@@ -35,6 +34,7 @@ let getPokemon = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => generatePokemon(data))
+            .catch(err => alert('Esse pokemon não existe'))
             
     }else{
         alert('Digite um pokemon')
@@ -73,11 +73,5 @@ let colorCard = (color) => {
 
     typeElement.style.backgroundColor = color;
 }
-
-
-
-
-
-
 
 button.addEventListener('click', getPokemon)
