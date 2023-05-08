@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Pokemon</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <p class="hp">
+                <span>HP</span>
+                <span id="hp">35</span>
+            </p>
+
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/25.png" alt="imagem pokemon" id="imgPkm">
+
+            <h2 class="name__pkm" id="name"></h2>
+
+            <div class="types">
+                <span id="type1">Eletric</span>
+            </div>
+
+            <div class="stats">
+                <div>
+                    <h3 id="attack">55</h3>
+                    <p>Attack</p>
+                </div>
+
+                <div>
+                    <h3 id="defense">40</h3>
+                    <p>Defense</p>
+                </div>
+
+                <div>
+                    <h3 id="speed">90</h3>
+                    <p>Speed</p>
+                </div>
+            </div>
+
+            <div class="input__button">
+                <input type="text" id="input__pkm" placeholder="Digite um pokemon">
+                <button id="btn">Pesquisar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
